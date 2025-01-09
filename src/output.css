@@ -554,15 +554,321 @@ video {
   display: none;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.mt-\[2\.875rem\] {
+  margin-top: 2.875rem;
+}
+
+.mt-\[48px\] {
+  margin-top: 48px;
+}
+
+.mt-\[450px\] {
+  margin-top: 450px;
+}
+
+.mt-\[52px\] {
+  margin-top: 52px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[13\.5rem\] {
+  height: 13.5rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-\[16\.1875rem\] {
+  height: 16.1875rem;
+}
+
+.h-\[28\] {
+  height: 28;
+}
+
+.h-\[28rem\] {
+  height: 28rem;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
+}
+
+.h-\[281px\] {
+  height: 281px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-\[16\.1875rem\] {
+  width: 16.1875rem;
+}
+
+.w-\[9\.75rem\] {
+  width: 9.75rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-\[14px\] {
+  gap: 14px;
+}
+
+.gap-\[24px\] {
+  gap: 24px;
+}
+
+.gap-\[28px\] {
+  gap: 28px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.gap-\[33px\] {
+  gap: 33px;
+}
+
+.gap-\[42px\] {
+  gap: 42px;
+}
+
+.gap-\[56px\] {
+  gap: 56px;
+}
+
+.gap-\[74px\] {
+  gap: 74px;
+}
+
+.gap-\[32px\] {
+  gap: 32px;
+}
+
+.gap-\[48px\] {
+  gap: 48px;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+
+.rounded-\[70px\] {
+  border-radius: 70px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-primaryRed {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 32 78 / var(--tw-border-opacity, 1));
+}
+
+.bg-grayBg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity, 1));
+}
+
+.bg-textColor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 40 49 / var(--tw-bg-opacity, 1));
+}
+
+.bg-primaryRed {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 32 78 / var(--tw-bg-opacity, 1));
+}
+
+.bg-driveImg {
+  background-image: url('/src/assets/img/drive-graphic.jpg');
+}
+
+.bg-main {
+  background-image: url('/src/assets/img/main-bg.jpg');
+}
+
+.bg-none {
+  background-image: none;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.p-\[5rem\] {
+  padding: 5rem;
+}
+
+.px-\[1\.5625rem\] {
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
+
+.px-\[1rem\] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-\[2\.0625rem\] {
+  padding-left: 2.0625rem;
+  padding-right: 2.0625rem;
+}
+
+.px-\[2rem\] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-\[5rem\] {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-\[\.8125rem\] {
+  padding-top: .8125rem;
+  padding-bottom: .8125rem;
+}
+
+.py-\[1\.875rem\] {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+
+.py-\[1rem\] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-\[2\.0625rem\] {
+  padding-top: 2.0625rem;
+  padding-bottom: 2.0625rem;
+}
+
+.py-\[2\.1875rem\] {
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem;
+}
+
+.py-\[3rem\] {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.font-plusJakarta {
+  font-family: Plus Jakarta Sans, serif;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.text-\[5\.25rem\] {
+  font-size: 5.25rem;
+}
+
+.text-\[72px\] {
+  font-size: 72px;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-\[110\%\] {
+  line-height: 110%;
+}
+
+.leading-\[180\%\] {
+  line-height: 180%;
+}
+
+.text-mainWhite {
+  --tw-text-opacity: 1;
+  color: rgb(249 249 249 / var(--tw-text-opacity, 1));
+}
+
+.text-primaryRed {
+  --tw-text-opacity: 1;
+  color: rgb(255 32 78 / var(--tw-text-opacity, 1));
+}
+
+.text-secondaryTextColor {
+  --tw-text-opacity: 1;
+  color: rgb(135 140 145 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.hover\:bg-primaryRed:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 32 78 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-mainWhite:hover {
+  --tw-text-opacity: 1;
+  color: rgb(249 249 249 / var(--tw-text-opacity, 1));
 }

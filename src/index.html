@@ -1,13 +1,86 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+<body class="bg-main font-plusJakarta">
+
+    <!--Header-->
+
+    <header class="w-full flex justify-between py-[1.875rem] px-[5rem]">
+        <div class="flex items-center gap-[74px]">
+            <img src="assets/icons/kavig-logo.svg" alt="Kavig Logo" class="cursor-pointer">
+            <nav class="font-bold flex gap-[33px]">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Cases</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+        <button
+            class="bg-none border border-primaryRed font-bold text-primaryRed rounded-[50px] py-[.8125rem] px-[1rem] w-[9.75rem] transition-colors duration-300 hover:bg-primaryRed hover:text-mainWhite">
+            Get Started
+        </button>
+    </header>
+
+    <!--Main-->
+
+    <main class="p-[5rem] py-[2.0625rem] flex justify-between">
+        <div class="flex flex-col gap-[42px] justify-between">
+            <h1 class="text-[72px] font-bold leading-[110%]">Stay ahead of the <br> curve with our <br> forward-thinking
+            </h1>
+            <div class="flex flex-col gap-[48px]">
+                <p class="text-secondaryTextColor">An award-winning SEO agency with disciplines in digital
+                    marketing,<br> design, and website development. focused on understanding you.</p>
+                <div class="flex items-center gap-[56px]">
+                    <button
+                        class=" bg-textColor text-mainWhite flex justify-between py-[1rem] px-[2rem] gap-[42px] rounded-[70px]">Send
+                        message<img src="assets/icons/arrow-right.svg" alt="Arrow Rightt"></button>
+                    <a href="#" class="font-bold underline leading-[180%]">View Case Study</a>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div>
+                    <span class="text-primaryRed font-bold">Trusted by the world's <br> biggest brands</span>
+                </div>
+                <div class="flex gap-[28px]">
+                    <img src="assets/icons/afterpay-logo.svg" alt="Afterpay logo">
+                    <img src="assets/icons/basecamp-logo.svg" alt="Basecamp Logo">
+                    <img src="assets/icons/maze-logo.svg" alt="Maze Logo">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-[32px]">
+            <div class="flex gap-[24px]">
+                <img src="assets/img/girl-using-computer.png" alt="Girl Using Computer">
+                <div
+                    class="bg-primaryRed flex flex-col gap-[30px] w-[16.1875rem]  mt-[50px] rounded-[20px] py-[2.1875rem] px-[1.5625rem]">
+                    <h2 class="font-bold text-[5.25rem] leading-[110%]">230+</h2>
+                    <span>some big companies that we work with, and trust us very much</span>
+                    <img src="assets/icons/progress-bar.svg" alt="Progress Bar">
+                </div>
+            </div>
+            <div class="bg-driveImg h-[13.5rem] rounded-[20px] text-mainWhite py-[3rem] px-[2.0625rem] flex flex-col justify-center">
+                <div class="flex gap-[14px]">
+                    <img src="assets/icons/line.svg" alt="Line Icon">
+                    <span>Drive More Traffic and Sales </span>
+                </div>
+                <h3 class="text-[2rem] font-semibold">Drive more traffic <br> and product sales </h3>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
