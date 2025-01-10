@@ -17,7 +17,13 @@ module.exports = {
       },
       backgroundImage: {
         main: "url('/src/assets/img/main-bg.jpg')",
-        driveImg: "url('/src/assets/img/drive-graphic.jpg')"
+        driveImg: "url('/src/assets/img/drive-graphic.jpg')",
+        driveImgMobile: "url('/src/assets/img/drive-bg-mobile.jpg')",
+      },
+      fontSize: {
+        clampH1: 'clamp(2.6rem, 4vw, 4.5rem)', // Cria uma classe personalizada
+        clampH2: 'clamp(1.8rem, 2vw, 2rem)', // Cria uma classe personalizada
+        clampParagraph: 'clamp(0.8rem, 0.8vw, 1rem)', // Cria uma classe personalizada
       },
     },
   },

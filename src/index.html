@@ -17,10 +17,10 @@
 
     <!--Header-->
 
-    <header class="w-full flex justify-between py-[1.875rem] px-[5rem]">
+    <header class="w-full flex justify-between py-[1.875rem] px-[2rem] lg:px-[5rem]">
         <div class="flex items-center gap-[74px]">
             <img src="assets/icons/kavig-logo.svg" alt="Kavig Logo" class="cursor-pointer">
-            <nav class="font-bold flex gap-[33px]">
+            <nav class="font-bold flex gap-[33px] hidden lg:block">
                 <a href="">Home</a>
                 <a href="">About</a>
                 <a href="">Blog</a>
@@ -29,54 +29,50 @@
             </nav>
         </div>
         <button
-            class="bg-none border border-primaryRed font-bold text-primaryRed rounded-[50px] py-[.8125rem] px-[1rem] w-[9.75rem] transition-colors duration-300 hover:bg-primaryRed hover:text-mainWhite">
+            class="bg-none border border-primaryRed font-bold text-primaryRed rounded-[50px] py-[.8125rem] px-[1rem] w-[9.75rem] transition-colors duration-300 hover:bg-primaryRed hover:text-mainWhite hidden lg:block">
             Get Started
         </button>
     </header>
 
     <!--Main-->
 
-    <main class="p-[5rem] py-[2.0625rem] flex justify-between">
+    <main class=" px-[2rem] lg:px-[5rem] py-[2.0625rem] flex flex-col lg:flex-row justify-between w-full">
         <div class="flex flex-col gap-[42px] justify-between">
-            <h1 class="text-[72px] font-bold leading-[110%]">Stay ahead of the <br> curve with our <br> forward-thinking
-            </h1>
-            <div class="flex flex-col gap-[48px]">
-                <p class="text-secondaryTextColor">An award-winning SEO agency with disciplines in digital
-                    marketing,<br> design, and website development. focused on understanding you.</p>
+                <h1 class="text-clampH1 font-bold leading-[110%]">Stay ahead of the <br class="hidden lg:flex"> curve with our <br class="hidden lg:flex"> forward-thinking</h1>
+                <p class="text-secondaryTextColor text-clampParagraph">An award-winning SEO agency with disciplines in digital marketing,<br class="hidden lg:flex"> design, and website development. focused on understanding you.</p>
                 <div class="flex items-center gap-[56px]">
-                    <button
-                        class=" bg-textColor text-mainWhite flex justify-between py-[1rem] px-[2rem] gap-[42px] rounded-[70px]">Send
-                        message<img src="assets/icons/arrow-right.svg" alt="Arrow Rightt"></button>
-                    <a href="#" class="font-bold underline leading-[180%]">View Case Study</a>
+                    <button class=" bg-textColor text-mainWhite flex justify-between py-[1rem] px-[2rem] gap-[42px] rounded-[70px] w-full md:w-[40%] lg:w-auto">Send message<img src="assets/icons/arrow-right.svg" alt="Arrow Rightt"></button>
+                    <a href="#" class="font-bold underline leading-[180%] hidden md:block lg:block">View Case Study</a>
                 </div>
-            </div>
-            <div class="flex justify-between">
+            
+            <div class="flex justify-center lg:justify-between">
                 <div>
-                    <span class="text-primaryRed font-bold">Trusted by the world's <br> biggest brands</span>
+                    <span class="text-primaryRed font-bold">Trusted by the world's <br class="hidden lg:flex"> biggest brands</span>
                 </div>
                 <div class="flex gap-[28px]">
-                    <img src="assets/icons/afterpay-logo.svg" alt="Afterpay logo">
-                    <img src="assets/icons/basecamp-logo.svg" alt="Basecamp Logo">
-                    <img src="assets/icons/maze-logo.svg" alt="Maze Logo">
+                    
                 </div>
             </div>
         </div>
         <div class="flex flex-col gap-[32px]">
             <div class="flex gap-[32px]">
-                <img src="assets/img/girl-using-computer.png" alt="Girl Using Computer" class="">
+                <div class="relative hidden md:hidden lg:block">
+                    <span class="bg-textColor w-[6rem] h-[6rem] p-[1rem] absolute rounded-[100%] right-[14%] top-[-10%] flex items-center justify-center"> <img src="assets/icons/trending-up.svg" alt="Trending Up Icon"> </span>
+                    <img src="assets/img/girl-using-computer.png" alt="Girl Using Computer" class="h-full">
+                </div>
                 <div
-                    class="bg-primaryRed flex flex-col gap-[30px] w-[16.1875rem] rounded-[20px] py-[2.1875rem] px-[1.5625rem]">
-                    <h2 class="font-bold text-[5.25rem] leading-[110%]">230+</h2>
+                    class="bg-primaryRed gap-[30px] w-[16.1875rem] rounded-[20px] py-[2.1875rem] px-[1.5625rem] hidden lg:flex lg:flex-col">
+                    <h2 class="font-bold text-[3.25rem] leading-[110%]">230+</h2>
                     <span>some big companies that we work with, and trust us very much</span>
                     <img src="assets/icons/progress-bar.svg" alt="Progress Bar">
                 </div>
             </div>
-            <div class="bg-driveImg h-[13.5rem] rounded-[20px] text-mainWhite py-[3rem] px-[2.0625rem] flex flex-col justify-center">
+            <div class="bg-driveImgMobile lg:bg-driveImg bg-cover bg-no-repeat h-[13.5rem] rounded-[20px] text-mainWhite py-[3rem] px-[2.0625rem] flex flex-col justify-center gap-[14px]">
                 <div class="flex gap-[14px]">
-                    
-                    <span>Drive More Traffic and Sales </span>
+                    <img src="assets/icons/line.svg" alt="Line Icon">
+                    <span class="text-clampParagraph">Drive More Traffic and Sales </span>
                 </div>
-                <h3 class="text-[2rem] font-semibold">Drive more traffic <br> and product sales </h3>
+                <h3 class="text-clampH2 font-semibold">Drive more traffic <br> and product sales </h3>
             </div>
         </div>
     </main>
