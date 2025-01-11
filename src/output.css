@@ -604,8 +604,9 @@ video {
   top: -10%;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mx-auto {
@@ -639,14 +640,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-\[382px\] {
-  height: 382px;
 }
 
 .max-h-\[382px\] {
@@ -741,6 +734,10 @@ video {
   gap: 33px;
 }
 
+.gap-\[40px\] {
+  gap: 40px;
+}
+
 .gap-\[42px\] {
   gap: 42px;
 }
@@ -761,25 +758,8 @@ video {
   gap: 7px;
 }
 
-.gap-\[128px\] {
-  gap: 128px;
-}
-
-.gap-\[68px\] {
-  gap: 68px;
-}
-
-.gap-\[40px\] {
-  gap: 40px;
-}
-
-.gap-x-\[32px\] {
-  -moz-column-gap: 32px;
-       column-gap: 32px;
-}
-
-.gap-y-\[42px\] {
-  row-gap: 42px;
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .rounded-\[100\%\] {
@@ -852,16 +832,6 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-\[1rem\] {
@@ -1007,8 +977,9 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:px-6 {
@@ -1022,74 +993,19 @@ video {
     display: block;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-\[40\%\] {
     width: 40%;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
+  .lg\:gap-y-12 {
+    row-gap: 3rem;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
-  .lg\:hidden {
-    display: none;
-  }
-
-  .lg\:w-auto {
-    width: auto;
-  }
-
-  .lg\:w-\[20rem\] {
-    width: 20rem;
-  }
-
-  .lg\:flex-shrink-0 {
-    flex-shrink: 0;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between;
-  }
-
-  .lg\:bg-driveImg {
-    background-image: url('/src/assets/img/drive-graphic.jpg');
-  }
-
-  .lg\:px-\[5rem\] {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .lg\:px-\[7rem\] {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
-  .lg\:px-\[8rem\] {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
-  .lg\:px-\[10rem\] {
-    padding-left: 10rem;
-    padding-right: 10rem;
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:px-8 {
@@ -1099,14 +1015,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:col-span-5 {
-    grid-column: span 5 / span 5;
-  }
-
-  .xl\:col-span-7 {
-    grid-column: span 7 / span 7;
-  }
-
   .xl\:block {
     display: block;
   }
@@ -1115,20 +1023,8 @@ video {
     display: flex;
   }
 
-  .xl\:w-\[24rem\] {
-    width: 24rem;
-  }
-
   .xl\:w-auto {
     width: auto;
-  }
-
-  .xl\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
@@ -1143,6 +1039,10 @@ video {
     justify-content: space-between;
   }
 
+  .xl\:gap-y-16 {
+    row-gap: 4rem;
+  }
+
   .xl\:bg-driveImg {
     background-image: url('/src/assets/img/drive-graphic.jpg');
   }
@@ -1154,9 +1054,5 @@ video {
   .xl\:px-\[10rem\] {
     padding-left: 10rem;
     padding-right: 10rem;
-  }
-
-  .xl\:pb-0 {
-    padding-bottom: 0px;
   }
 }
