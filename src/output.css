@@ -582,6 +582,10 @@ video {
   height: 13.5rem;
 }
 
+.h-\[3\.125rem\] {
+  height: 3.125rem;
+}
+
 .h-\[6rem\] {
   height: 6rem;
 }
@@ -590,8 +594,28 @@ video {
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.max-h-\[382px\] {
+  max-height: 382px;
+}
+
 .w-\[16\.1875rem\] {
   width: 16.1875rem;
+}
+
+.w-\[3\.125rem\] {
+  width: 3.125rem;
+}
+
+.w-\[35\%\] {
+  width: 35%;
+}
+
+.w-\[65\%\] {
+  width: 65%;
 }
 
 .w-\[6rem\] {
@@ -606,12 +630,20 @@ video {
   width: 100%;
 }
 
+.max-w-\[557px\] {
+  max-width: 557px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -658,16 +690,28 @@ video {
   gap: 56px;
 }
 
+.gap-\[72px\] {
+  gap: 72px;
+}
+
 .gap-\[74px\] {
   gap: 74px;
 }
 
-.gap-\[0px\] {
-  gap: 0px;
+.gap-\[7px\] {
+  gap: 7px;
 }
 
-.gap-\[16px\] {
-  gap: 16px;
+.gap-\[128px\] {
+  gap: 128px;
+}
+
+.gap-\[68px\] {
+  gap: 68px;
+}
+
+.gap-\[40px\] {
+  gap: 40px;
 }
 
 .rounded-\[100\%\] {
@@ -676,6 +720,10 @@ video {
 
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+
+.rounded-\[30px\] {
+  border-radius: 30px;
 }
 
 .rounded-\[50px\] {
@@ -700,6 +748,11 @@ video {
   background-color: rgb(255 32 78 / var(--tw-bg-opacity, 1));
 }
 
+.bg-secondaryTextColor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(135 140 145 / var(--tw-bg-opacity, 1));
+}
+
 .bg-textColor {
   --tw-bg-opacity: 1;
   background-color: rgb(34 40 49 / var(--tw-bg-opacity, 1));
@@ -717,16 +770,38 @@ video {
   background-image: none;
 }
 
+.bg-officeImg {
+  background-image: url('/src/assets/img/office.jpg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-\[1rem\] {
   padding: 1rem;
+}
+
+.p-\[40px\] {
+  padding: 40px;
 }
 
 .px-\[1\.5625rem\] {
@@ -777,6 +852,10 @@ video {
 .py-\[3rem\] {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.pb-\[42px\] {
+  padding-bottom: 42px;
 }
 
 .font-plusJakarta {
@@ -854,6 +933,12 @@ video {
   color: rgb(249 249 249 / var(--tw-text-opacity, 1));
 }
 
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -877,8 +962,20 @@ video {
     display: flex;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-\[20rem\] {
+    width: 20rem;
+  }
+
+  .lg\:flex-shrink-0 {
+    flex-shrink: 0;
   }
 
   .lg\:flex-row {
@@ -900,5 +997,63 @@ video {
   .lg\:px-\[5rem\] {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:px-\[7rem\] {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .lg\:px-\[8rem\] {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:px-\[10rem\] {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:w-\[24rem\] {
+    width: 24rem;
+  }
+
+  .xl\:w-auto {
+    width: auto;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:bg-driveImg {
+    background-image: url('/src/assets/img/drive-graphic.jpg');
+  }
+
+  .xl\:p-\[0px\] {
+    padding: 0px;
+  }
+
+  .xl\:px-\[10rem\] {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }

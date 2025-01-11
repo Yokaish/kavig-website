@@ -19,6 +19,7 @@ module.exports = {
         main: "url('/src/assets/img/main-bg.jpg')",
         driveImg: "url('/src/assets/img/drive-graphic.jpg')",
         driveImgMobile: "url('/src/assets/img/drive-bg-mobile.jpg')",
+        officeImg: "url('/src/assets/img/office.jpg')",
       },
       fontSize: {
         clampH1: 'clamp(2.6rem, 4vw, 4.5rem)', // Cria uma classe personalizada
