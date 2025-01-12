@@ -621,6 +621,14 @@ video {
   margin-left: 2px;
 }
 
+.ml-\[40px\] {
+  margin-left: 40px;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -767,6 +775,14 @@ video {
 
 .gap-\[7px\] {
   gap: 7px;
+}
+
+.gap-\[60px\] {
+  gap: 60px;
+}
+
+.gap-\[4rem\] {
+  gap: 4rem;
 }
 
 .rounded-\[100\%\] {
@@ -931,6 +947,11 @@ video {
   padding-bottom: 4rem;
 }
 
+.py-\[2rem\] {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-\[42px\] {
   padding-bottom: 42px;
 }
@@ -998,6 +1019,11 @@ video {
   color: rgb(135 140 145 / var(--tw-text-opacity, 1));
 }
 
+.text-textColor {
+  --tw-text-opacity: 1;
+  color: rgb(34 40 49 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1055,6 +1081,10 @@ video {
     display: flex;
   }
 
+  .xl\:hidden {
+    display: none;
+  }
+
   .xl\:h-\[1\.5rem\] {
     height: 1.5rem;
   }
@@ -1095,11 +1125,29 @@ video {
     justify-content: space-between;
   }
 
+  .xl\:gap-\[100px\] {
+    gap: 100px;
+  }
+
   .xl\:bg-driveImg {
     background-image: url('/src/assets/img/drive-graphic.jpg');
   }
 
+  .xl\:bg-driveImgMobile {
+    background-image: url('/src/assets/img/drive-bg-mobile.jpg');
+  }
+
   .xl\:p-\[0px\] {
     padding: 0px;
+  }
+
+  .xl\:py-\[4rem\] {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:text-mainWhite {
+    --tw-text-opacity: 1;
+    color: rgb(249 249 249 / var(--tw-text-opacity, 1));
   }
 }

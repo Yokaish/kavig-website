@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
     loop: true, // Permite rotação infinita dos slides
   
     // Quantidade de slides visíveis
-    slidesPerView: 2.5, // Define 3 slides visíveis parcialmente
+    slidesPerView: 'auto', // Define 3 slides visíveis parcialmente
     spaceBetween: 20, // Espaçamento entre os slides
     
     // Força o próximo slide a alinhar à esquerda
@@ -31,5 +31,12 @@ const swiper = new Swiper('.swiper', {
   
     // Configurações de deslizamento
     slideActiveClass: 'swiper-slide-active',
+
   });
+
+  swiper.slides.forEach((slide) => {
+    slide.style.width = '420px';
+    slide.style.height = '420px';
+});
+
   
