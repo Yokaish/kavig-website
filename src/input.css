@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+#header {
+  transition: top 0.8s ease; /* Adiciona uma transição suave na propriedade top */
+}
+
+
 #mobile-menu {
 	display: none;
     width: 0%;
@@ -14,7 +19,7 @@
     width: 100%;
     left: 0;
     height: 100vh;
-    transition: 0.8s;
+    transition: width 0.45s;
     opacity: 1; 
     z-index: 8;
 }

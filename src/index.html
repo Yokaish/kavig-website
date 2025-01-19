@@ -18,10 +18,10 @@
 <body class="bg-main font-plusJakarta  text-textColor">
 
     <!-- Main Container A-->
-    <div class="container mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 relative">
+    <div class="container mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
 
         <!--Header-->
-        <header class="w-full flex justify-between py-[1.875rem]">
+        <header class="w-full flex justify-between py-[1.875rem] xl:fixed xl:top-0 xl:bg-main z-20" id="header">
             <div class="flex items-center gap-[74px]">
                 <img src="assets/icons/kavig-logo.svg" alt="Kavig Logo" class="cursor-pointer z-10">
                 <nav class="font-bold gap-[33px] hidden xl:flex">
@@ -35,15 +35,17 @@
             <button onclick="toggleMenu()" class="cursor-pointer flex justify-end z-10 xl:hidden">
                 <img class="block sm:hidden opacity-80" id="menu-icon" src="icons/hamb-menu.svg" alt="">
                 botao
-            </button>
-            <div class="hidden absolute top-0 right-0 width-full mb-10mr-8" id="mobile-menu">
+              </button>
+              
+              <div class="hidden absolute top-0 right-0 w-full mb-10mr-8" id="mobile-menu">
                 <ul class="mt-28">
-                    <li class="mt-10 px-6"><a href="#section1" class="text-mainWhite">ABOUT ME</a></li>
-                    <li class="mt-10 px-6"><a href="#section2" class="text-mainWhite">PROJECTS</a></li>
-                    <li class="mt-10 px-6"><a href="#section3" class="text-mainWhite">TECHNOLOGIES</a></li>
-                    <li class="mt-10 px-6"><a href="#section4" class="text-mainWhite">CONTACT</a></li>
+                  <li class="mt-10 px-6"><a href="#section1" class="text-mainWhite">ABOUT ME</a></li>
+                  <li class="mt-10 px-6"><a href="#section2" class="text-mainWhite">PROJECTS</a></li>
+                  <li class="mt-10 px-6"><a href="#section3" class="text-mainWhite">TECHNOLOGIES</a></li>
+                  <li class="mt-10 px-6"><a href="#section4" class="text-mainWhite">CONTACT</a></li>
                 </ul>
-            </div>
+              </div>
+              
             <button
                 class="bg-none border border-primaryRed font-bold text-primaryRed rounded-[50px] py-[.8125rem] px-[1rem] w-[9.75rem] transition-colors duration-300 hover:bg-primaryRed hover:text-mainWhite hidden xl:block">
                 Get Started
@@ -51,7 +53,7 @@
         </header>
 
         <!--Main-->
-        <main class="py-[2.0625rem] flex flex-col xl:flex-row justify-between w-full" id="home">
+        <main class="xl:pb-[2.0625rem] xl:pt-[140px] pb-[2.0625rem] flex flex-col xl:flex-row justify-between w-full" id="home">
             <div class="flex flex-col gap-[42px] justify-between pb-[42px] xl:p-[0px]">
                 <h1 class="text-clampH1 font-bold leading-[110%]">Stay ahead of the <br class="hidden xl:flex"> curve
                     with our <br class="hidden xl:flex"> forward-thinking</h1>
@@ -192,7 +194,7 @@
                     and answering frequently asked questions to help our clients.</p>
                 <div class="flex items-center  gap-[3rem]">
                     <button
-                        class="font-bold text-textColor border-2 rounded-[30px] border-textColor py-[1rem] px-[1.75rem]">More
+                        class="font-bold text-textColor border rounded-[30px] border-textColor py-[1rem] px-[1.75rem] hover:border-transparent hover:bg-primaryRed hover:text-mainWhite transition-colors duration-300">More
                         Questions</button>
                     <a class="font-bold underline" href="#">Contact Us</a>
                 </div>
@@ -244,9 +246,10 @@
         <section
             class="w-full bg-driveImgMobile bg-no-repeat bg-cover rounded-[30px] flex flex-col xl:flex-row gap-[2rem] items-center justify-between p-[64px] mb-[4rem]">
             <h2 class="text-clampH2 font-semibold text-mainWhite">Ready to work with us?</h2>
-            <button
-                class=" bg-primaryRed text-mainWhite flex justify-between py-[1rem] px-[2rem] gap-[42px] rounded-[70px] w-full md:w-[40%] xl:w-auto">Get
-                started<img src="assets/icons/arrow-right.svg" alt="Arrow Right"></button>
+            <button 
+                id="get-started-bottom"
+                class=" bg-primaryRed border-transparent text-mainWhite hover:text-primaryRed border hover:border-primaryRed hover:bg-transparent transition-colors duration-300  flex justify-between py-[1rem] px-[2rem] gap-[42px] rounded-[70px] w-full md:w-[40%] xl:w-auto">Get
+                started<img src="assets/icons/arrow-right.svg" alt="Arrow Right" id="get-started-arrow"></button>
         </section>
 
         <footer class="py-[1.875rem] flex items-center justify-between flex-col xl:flex-row gap-[30px]" id="contact">

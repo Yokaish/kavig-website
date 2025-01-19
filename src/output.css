@@ -628,6 +628,10 @@ video {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -693,12 +697,12 @@ video {
   height: 100%;
 }
 
-.max-h-\[382px\] {
-  max-height: 382px;
-}
-
 .max-h-0 {
   max-height: 0px;
+}
+
+.max-h-\[382px\] {
+  max-height: 382px;
 }
 
 .w-\[16\.1875rem\] {
@@ -729,6 +733,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[20rem\] {
+  max-width: 20rem;
+}
+
 .max-w-\[33\.1875rem\] {
   max-width: 33.1875rem;
 }
@@ -737,16 +745,12 @@ video {
   max-width: 33.375rem;
 }
 
-.max-w-\[557px\] {
-  max-width: 557px;
-}
-
-.max-w-\[20rem\] {
-  max-width: 20rem;
-}
-
 .max-w-\[36\.1875rem\] {
   max-width: 36.1875rem;
+}
+
+.max-w-\[557px\] {
+  max-width: 557px;
 }
 
 .cursor-pointer {
@@ -783,6 +787,10 @@ video {
 
 .gap-\[1\.875rem\] {
   gap: 1.875rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .gap-\[14px\] {
@@ -853,10 +861,6 @@ video {
   gap: 7px;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -887,10 +891,6 @@ video {
 
 .border {
   border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-4 {
@@ -997,10 +997,6 @@ video {
   padding: 64px;
 }
 
-.p-\[26px\] {
-  padding: 26px;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1029,6 +1025,11 @@ video {
 .px-\[2\.0625rem\] {
   padding-left: 2.0625rem;
   padding-right: 2.0625rem;
+}
+
+.px-\[26px\] {
+  padding-left: 26px;
+  padding-right: 26px;
 }
 
 .px-\[2rem\] {
@@ -1081,37 +1082,16 @@ video {
   padding-bottom: 4rem;
 }
 
-.px-\[26px\] {
-  padding-left: 26px;
-  padding-right: 26px;
-}
-
-.pb-\[42px\] {
-  padding-bottom: 42px;
-}
-
-.pt-\[10px\] {
-  padding-top: 10px;
-}
-
-.pt-\[\] {
-  padding-top: ;
-}
-
-.pt-\[36px\] {
-  padding-top: 36px;
-}
-
-.pb-\[26px\] {
-  padding-bottom: 26px;
-}
-
-.pb-\[2px\] {
-  padding-bottom: 2px;
+.pb-\[2\.0625rem\] {
+  padding-bottom: 2.0625rem;
 }
 
 .pb-\[20px\] {
   padding-bottom: 20px;
+}
+
+.pb-\[42px\] {
+  padding-bottom: 42px;
 }
 
 .pt-\[30px\] {
@@ -1186,12 +1166,12 @@ video {
   text-decoration-line: underline;
 }
 
-.opacity-80 {
-  opacity: 0.8;
-}
-
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .transition-all {
@@ -1214,6 +1194,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+#header {
+  transition: top 0.8s ease;
+  /* Adiciona uma transição suave na propriedade top */
+}
+
 #mobile-menu {
   display: none;
   width: 0%;
@@ -1227,7 +1212,7 @@ video {
   width: 100%;
   left: 0;
   height: 100vh;
-  transition: 0.8s;
+  transition: width 0.45s;
   opacity: 1;
   z-index: 8;
 }
@@ -1261,9 +1246,18 @@ video {
   /* Ajuste conforme necessário para garantir que o conteúdo seja totalmente exibido */
 }
 
+.hover\:border-primaryRed:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 32 78 / var(--tw-border-opacity, 1));
+}
+
 .hover\:border-textColor:hover {
   --tw-border-opacity: 1;
   border-color: rgb(34 40 49 / var(--tw-border-opacity, 1));
+}
+
+.hover\:border-transparent:hover {
+  border-color: transparent;
 }
 
 .hover\:bg-primaryRed:hover {
@@ -1319,6 +1313,14 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:fixed {
+    position: fixed;
+  }
+
+  .xl\:top-0 {
+    top: 0px;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -1351,6 +1353,10 @@ video {
     width: 35%;
   }
 
+  .xl\:w-\[36\.1875rem\] {
+    width: 36.1875rem;
+  }
+
   .xl\:w-\[65\%\] {
     width: 65%;
   }
@@ -1361,10 +1367,6 @@ video {
 
   .xl\:w-auto {
     width: auto;
-  }
-
-  .xl\:w-\[36\.1875rem\] {
-    width: 36.1875rem;
   }
 
   .xl\:flex-row {
@@ -1395,6 +1397,10 @@ video {
     background-image: url('/src/assets/img/drive-graphic.jpg');
   }
 
+  .xl\:bg-main {
+    background-image: url('/src/assets/img/main-bg.jpg');
+  }
+
   .xl\:p-\[0px\] {
     padding: 0px;
   }
@@ -1402,6 +1408,14 @@ video {
   .xl\:py-\[4rem\] {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .xl\:pb-\[2\.0625rem\] {
+    padding-bottom: 2.0625rem;
+  }
+
+  .xl\:pt-\[140px\] {
+    padding-top: 140px;
   }
 
   .xl\:text-center {
