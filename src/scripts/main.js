@@ -1,23 +1,24 @@
 document.querySelectorAll('.plus-btn, .minus-btn').forEach(button => {
-    button.addEventListener('click', function() {
-      // Seleciona o parágrafo e os botões dentro da mesma div onde o botão foi clicado
-      const paragraph = this.closest('.question').querySelector('p');
-      const plusButton = this.closest('.question').querySelector('.plus-btn');
-      const minusButton = this.closest('.question').querySelector('.minus-btn');
+  button.addEventListener('click', function() {
+    // Seleciona o parágrafo e os botões dentro da mesma div onde o botão foi clicado
+    const paragraph = this.closest('.question').querySelector('p');
+    const plusButton = this.closest('.question').querySelector('.plus-btn');
+    const minusButton = this.closest('.question').querySelector('.minus-btn');
   
-      // Alterna o atributo 'hidden' do parágrafo
-      paragraph.toggleAttribute('hidden');
-      
-      // Alterna a visibilidade dos botões
-      if (paragraph.hidden) {
-        plusButton.hidden = false;
-        minusButton.hidden = true;
-      } else {
-        plusButton.hidden = true;
-        minusButton.hidden = false;
-      }
-    });
+    // Alterna a classe 'visible' no parágrafo
+    paragraph.classList.toggle('visible');
+    
+    // Alterna a visibilidade dos botões
+    if (paragraph.classList.contains('visible')) {
+      plusButton.hidden = true;
+      minusButton.hidden = false;
+    } else {
+      plusButton.hidden = false;
+      minusButton.hidden = true;
+    }
   });
+});
+
 
   function toggleMenu() {
     let menu = document.getElementById('mobile-menu');
@@ -30,5 +31,16 @@ document.querySelectorAll('.plus-btn, .minus-btn').forEach(button => {
         icon.src = "icons/hamb-menu-closed.svg";
     }
 }
+
+const sendMsgBtn = document.querySelector('#send-msg-btn');
+const arrowSend = document.querySelector('#arrow-send')
+
+sendMsgBtn.addEventListener('mouseover', () => {
+    arrowSend.src = 'assets/icons/arrow-black.svg'
+})
+
+sendMsgBtn.addEventListener('mouseleave', () => {
+  arrowSend.src = 'assets/icons/arrow-right.svg'
+})
   
   
