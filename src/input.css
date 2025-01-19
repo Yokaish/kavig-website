@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#mobile-menu {
+	display: none;
+    width: 0%;
+    opacity: 0;
+}
+
+#mobile-menu.open {
+    display: block; /* Show menu when open */
+    background-color: #202020;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    transition: 0.8s;
+    opacity: 1; 
+    z-index: 8;
+}
