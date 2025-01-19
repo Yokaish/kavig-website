@@ -1,7 +1,7 @@
 document.querySelectorAll('.plus-btn, .minus-btn').forEach(button => {
   button.addEventListener('click', function() {
     // Seleciona o parágrafo e os botões dentro da mesma div onde o botão foi clicado
-    const paragraph = this.closest('.question').querySelector('p');
+    const paragraph = this.closest('.question').querySelector('.answer');
     const plusButton = this.closest('.question').querySelector('.plus-btn');
     const minusButton = this.closest('.question').querySelector('.minus-btn');
   
